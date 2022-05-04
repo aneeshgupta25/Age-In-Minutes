@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nature3"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        app:titleCentered="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@color/sky_blue_dark"
+        android:textAlignment="center" />
+
+    <TextView
+        style="@style/text_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="15dp"
+        android:text="@string/calculate_your"
+        android:textColor="@color/dark_blue"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <TextView
+        style="@style/text_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/age"
+        android:textColor="@color/dark_blue"
+        android:textSize="40sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        style="@style/text_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="@string/in_minutes"
+        android:textColor="@color/dark_blue"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnDatePicker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:backgroundTint="@color/ver_dark_blue"
+        android:padding="10dp"
+        android:text="Enter Date of Birth"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvEnteredDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/ver_dark_blue"
+        style="@style/text_border"
+        android:textSize="30sp" />
+
+    <TextView
+        style="@style/text_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:text="Selected Date"
+        android:textColor="@color/dark_green"
+        android:textSize="25sp"
+        android:textStyle="italic|bold" />
+
+    <TextView
+        android:id="@+id/tvAgeInMin"
+        style="@style/text_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:padding="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/ver_dark_blue"
+        android:textSize="40sp" />
+
+    <TextView
+        style="@style/text_border"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:text="Age in Minutes"
+        android:textColor="@color/dark_green"
+        android:textSize="25sp"
+        android:textStyle="italic|bold" />
+
+</LinearLayout>
